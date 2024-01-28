@@ -1,6 +1,6 @@
 # backend
 
-cmd:
+cmd in the folder nnn:
 dotnet restore
 dotnet run
 
