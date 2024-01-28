@@ -9,6 +9,9 @@ dotnet run
    post {
   "name": "string"
     }
+   GET /api/categories - Получить все категории.
+   POST /api/categories - Добавить новую категорию.
+   DELETE /api/categories/{categoryId} - Удалить категорию по идентификатору.
 
 2. REST API для страницы создание товара
   post 
@@ -18,9 +21,14 @@ dotnet run
   "unitOfMeasurement": 5,
   "categoryId": 0
 }
+POST /api/products - Создать новый товар.
+PUT /api/products/id
+DELETE /api/products/id
    
 
 3. REST API для страницы просмотра списка товара
+   GET /api/products?CategoryId=100 - фильтр по категориям
+   
    request url: https://localhost:5001/api/products?CategoryId=100
 curl: curl -X 'GET' \
   'https://localhost:5001/api/products?CategoryId=100' \
